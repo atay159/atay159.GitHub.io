@@ -1,3 +1,4 @@
 body { font-family: helvetica, sans-serif;}
 .subtitle { color:	#800000 }
 #masthead { text-align: center; }
+.thumbnail {width: 150px; height: 100px;}
