@@ -1,5 +1,6 @@
 body { font-family: helvetica, sans-serif;}
 .subtitle { color:	#800000 }
 #masthead { text-align: center; }
+body { background-color:#ABEBC6}
 .thumbnail {width: 250px; height: 200px;}
 .shadebox{background-color: rgba(0, 0, 0,0.4); border-radius: 8px; color: #FFF;}
