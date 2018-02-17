@@ -2,8 +2,8 @@ body { font-family: helvetica, sans-serif;}
 .subtitle { color:	#FF33EC }
 #masthead { text-align: center; }
 body { background-color:#ABEBC6}
-.thumbnail {width: 250px; height: 200px;}
-.shadebox{background-color: rgba(0, 0, 0,0.4); border-radius: 8px; color: #FFF;}
+.thumbnail {width: 150px; height: 100px;}
+
 
 /* Display article thumbnails and descriptions side by side in a grid */
 article {
@@ -22,4 +22,40 @@ article {
 .article-meta {
   grid-area: meta;
   align-self: start;
+}
+
+section.page-header {
+  background-image: url('../images/header-lidar.jpg');
+}
+h1.project-name {
+  color: #EEE;
+}
+h2.project-tagline {
+  color: #EEE;
+  opacity: 1
+}
+.breadcrumb-item {
+  font-size: 0.75em;
+}
+.main-content li > img {
+  margin: 20px 0;
+  box-shadow: 0px 0px 10px #999
+}
+.shadebox {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  color: #FFF;
+}
+.shadebox a {
+  color: #FFF;
+}
+.schedules td {
+  font-family: Courier,sans-serif;
+}
+.text-center {
+ text-align: center;
+}
+.wide {
+  max-width: 1175px;
+  width: 100%;
 }
