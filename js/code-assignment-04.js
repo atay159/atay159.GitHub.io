@@ -1,4 +1,5 @@
-let projectArray1 = [
+// This is an array
+let projectArray[1] = [
   1,
   'https://arcg.is/1HnCr1',
   'Map of Recent Earthquakes'
@@ -7,6 +8,7 @@ let projectArray1 = [
   ['earthquake', 'usgs']
 ]
 
+// This is an object. Each value is paired with a property.
 let projectObject1 = {
   id: 1,
   url: 'https://arcg.is/1HnCr1'
@@ -16,7 +18,9 @@ let projectObject1 = {
   keyword: ['earthqukes', 'usgs']
 }
 
-let projectArray2 = [
+
+// This is an array
+let projectArray[2] = [
   1,
   'https://arcg.is/9yWSf',
   'LSU Reported Incidents',
@@ -25,6 +29,7 @@ let projectArray2 = [
   ['crimes', 'incidents', 'accidents']
 ]
 
+// This is an object. Each value is paired with a property.
 let projectObject2 = {
   id: 1,
   url: 'https://arcg.is/9yWSf',
@@ -40,4 +45,4 @@ let projectObject2 = {
 
 console.log(projectArray[2])
 console.log(projectObject.title)
-console.log(projectObject["title"])
+console.log(projectObject["Map of Recent Earthquakes"])
