@@ -5,6 +5,7 @@ let projectArray[1] = [
   'Map of Recent Earthquakes'
   'An ArcGIS Online Web App showing worldwide earthquakes of magnitutde 4.5 or greater',
   true,
+  ['earthquake', 'usgs']
 ]
 
 // This is an object. Each value is paired with a property.
