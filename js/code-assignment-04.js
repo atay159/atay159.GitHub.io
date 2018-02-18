@@ -1,4 +1,4 @@
-let projectArray = [
+let projectArray1 = [
   1,
   'https://arcg.is/1HnCr1',
   'Map of Recent Earthquakes'
@@ -7,7 +7,7 @@ let projectArray = [
   ['earthquake', 'usgs']
 ]
 
-let projectObject = {
+let projectObject1 = {
   id: 1,
   url: 'https://arcg.is/1HnCr1'
   title: 'Map of Recent Earthquakes',
@@ -16,8 +16,8 @@ let projectObject = {
   keyword: ['earthqukes', 'usgs']
 }
 
-let projectArray = [
-  2,
+let projectArray2 = [
+  1,
   'https://arcg.is/9yWSf',
   'LSU Reported Incidents',
   'This website is for anyone on the LSU campus to report crimes and accidents.',
@@ -25,8 +25,8 @@ let projectArray = [
   ['crimes', 'incidents', 'accidents']
 ]
 
-let projectObject = {
-  id: 2,
+let projectObject2 = {
+  id: 1,
   url: 'https://arcg.is/9yWSf',
   title: 'LSU Reported Incidents',
   desc: 'This website is for anyone on the LSU campus to report crimes and accidents.',
