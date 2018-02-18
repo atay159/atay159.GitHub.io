@@ -1,5 +1,5 @@
 // This is an array
-let projectArray[0] = [
+let projectArray0 = [
   1,
   'https://arcg.is/1HnCr1',
   'Map of Recent Earthquakes',
@@ -20,7 +20,7 @@ let projectObject0 = {
 
 
 // This is an array
-let projectArray[1] = [
+let projectArray1 = [
   1,
   'https://arcg.is/9yWSf',
   'LSU Reported Incidents',
