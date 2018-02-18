@@ -13,8 +13,8 @@ let projectObject0 = {
   id: 1,
   url: 'https://arcg.is/1HnCr1',
   title: 'Map of Recent Earthquakes',
-  description: 'An ArcGIS Online Web App showing worldwide earthquakes of magnitutde 4.5 or greater',
-  hasThumbnail: true,
+  desc: 'An ArcGIS Online Web App showing worldwide earthquakes of magnitutde 4.5 or greater',
+  thumb: true,
   keyword: ['earthqukes', 'usgs']
 }
 
@@ -43,6 +43,7 @@ let projectObject1 = {
   ]
 }
 
-console.log(projectArray[0])
+// display messages in the browser's developer console, combining the values with text
+console.log(projectArray[1])
 console.log(projectObject.title)
-console.log(projectObject["Map of Recent Earthquakes"])
+console.log(projectObject["LSU Reported Incidents"])
