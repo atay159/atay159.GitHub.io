@@ -44,6 +44,6 @@ let projectObject1 = {
 }
 
 // display messages in the browser's developer console, combining the values with text
-console.log(projectArray[1])
-console.log(projectObject.title)
-console.log(projectObject["LSU Reported Incidents"])
+console.log(projectArray1)
+console.log(projectObject1.title)
+console.log(projectObject1["LSU Reported Incidents"])
