@@ -15,7 +15,11 @@ let projects = [ {
   keywords: ['coastal town', 'California', 'Pacific Ocean']
 } ]
 
-for (let i=0; i < projects.length; i++) {
-  let x = i + 1
-  console.log('ss-project' + x + '.png' );
+for (let i = 0; i < projects.length; i++) {
+  console.log('Element ' + i + ' title: ' + projects[i].title)
+  if (projects[i].hasThumbnail === true) {
+    console.log('ss-project-' + projects[i].id + '.png' );
+  } else {
+    console.log('no-preview.png')
+  }
 }
