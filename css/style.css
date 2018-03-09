@@ -1,8 +1,9 @@
 body { font-family: helvetica, sans-serif;}
-.subtitle { color:	#FF33EC }
+.subtitle { color:	#660066 }
 #masthead { text-align: center; }
-body { background-color:#ABEBC6}
-.thumbnail {width: 150px; height: 100px;}
+body { background-color:#e6ffff}
+.thumbnail {width: 150px; height: 150px;}
+.thumb {width: 150px; height: 100px}
 
 
 /* Display article thumbnails and descriptions side by side in a grid */
