@@ -1,5 +1,5 @@
 //let someName = L.map('your-map-div-id').setView([yourLat, yourLon], yourZoom)
-let map1 = L.map('map1').setView([30.01, 31.23], 11)
+let map1 = L.map('map1').setView([29.968748, 31.127083], 12)
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}').addTo(map1)
 
 let TticonIcon = L.icon({
