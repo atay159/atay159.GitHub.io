@@ -13,9 +13,9 @@ thisStyle = function (State_Name) {
   }
   return thisStyle
 }
-function thisPopup (state, statelayer) {
-    let name = feature.properties.STATE_NAME
-    let population = feature.properties.POPULATION
+function thisPopup (State_Name, statelayer) {
+    let name = State_Name.properties.STATE_NAME
+    let population = State_Name.properties.POPULATION
     statelayer.bindPopup('Population ' + name + ': ' + population + '<br>Greater than: 5000000')
   }
 let thisOptions = {
