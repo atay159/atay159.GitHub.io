@@ -18,7 +18,7 @@ function thisPopup (State_Name, statelayer) {
     let name = State_Name.properties.STATE_NAME
     let population = State_Name.properties.POPULATION
     let subregion = State_Name.properties.SUB_REGION
-    statelayer.bindPopup('Population of ' name + ': ' + population + '<br>' + 'Sub Region: ' + subregion)
+    statelayer.bindPopup('Population of ' + name + ': ' + population + '<br>Sub Region: ' + subregion)
   }
 let thisOptions = {
   style: thisStyle,
