@@ -3,7 +3,7 @@ map2url = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/Ma
 L.tileLayer(map2url).addTo(map2)
 
 thisStyle = function (State_Name) {
-  let population = state_name.POPULATION
+  let population = State_Name.POPULATION
   let stateColor = 'Red'
   if (POPULATION > 5000000) {stateColor = 'Purple' }
   let thisStyle = {
