@@ -4,8 +4,8 @@ L.tileLayer(map2url).addTo(map2)
 
 thisStyle = function (State_Name) {
   let population = State_Name.properties.POPULATION
-  let thisstateColor = 'Red'
-  if (State_Name.properties.POPULATION > 5000000) {stateColor = 'Purple' }
+  let thisstateColor = 'Yellow'
+  if (State_Name.properties.POPULATION > 5000000) {thisstateColor = 'Purple' }
   let thisStyle = {
     color: thisstateColor,
     weight: 2,
@@ -16,7 +16,8 @@ thisStyle = function (State_Name) {
 function thisPopup (State_Name, statelayer) {
     let name = State_Name.properties.STATE_NAME
     let population = State_Name.properties.POPULATION
-    statelayer.bindPopup('Population ' + name + ': ' + population + '<br>Greater than: 5000000')
+    let subregion = State_Name.properties.SUB_REGION
+    statelayer.bindPopup( name + ': ' + population + '<br>' + 'Sub Region:' + subregion)
   }
 let thisOptions = {
   style: thisStyle,
