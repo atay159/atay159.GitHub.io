@@ -4,7 +4,7 @@ L.tileLayer(map2url).addTo(map2)
 
 thisStyle = function (State_Name) {
   let population = State_Name.properties.POPULATION
-  let stateColor = 'Red'
+  let thisstateColor = 'Red'
   if (State_Name.properties.POPULATION > 5000000) {stateColor = 'Purple' }
   let thisStyle = {
     color: thisstateColor,
