@@ -20,7 +20,13 @@ let thisControlOptions = {
   collapsed: true
 }
 
-let operationalLayers = {}
+let paradiseCalifornia = L.marker([39.777004, -121.598077]).addTo(map3)
+
+let operationalLayers = {
+  'Paradise': paradiseCalifornia
+}
+
+paradiseCalifornia.bindPopup('My Hometown' + '<br>Paradise, CA')
 
 L.control.layers(theseBasemaps, operationalLayers, thisControlOptions).addTo(map3)
 
