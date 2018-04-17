@@ -1,1 +1,5 @@
-#wondersMap { height: 500px}
+#wondersMap { height: 450px}
+body { font-family: helvetica, sans-serif;}
+.subtitle { color:	#660066 }
+#masthead { text-align: center; }
+.thumbnail {width: 250px; height: 250px;}

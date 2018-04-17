@@ -1,6 +1,6 @@
-let wondersMap = L.map('wondersMap').setView([28.254486, -40.841492], 1)
+let wondersMap = L.map('wondersMap').setView([28.254486, -40.841492], 2)
 
-let thisBasemapUrl = 'https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png'
+let thisBasemapUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}'
 let thisBasemap = L.tileLayer(thisBasemapUrl)
 thisBasemap.addTo(wondersMap)
 
@@ -16,8 +16,8 @@ let thisBasemap4 = L.tileLayer(thisBasemap4Url)
 let theseBasemaps = {
   'Basic Map': thisBasemap,
   'Topo Map': thisBasemap2,
-  'World_Imagery Map': thisBasemap3,
-  'map': thisBasemap4
+  'World Imagery Map': thisBasemap3,
+  'Equator Map': thisBasemap4
 }
 
 let thisControlOptions = {
@@ -27,3 +27,6 @@ let thisControlOptions = {
 let operationalLayers = {}
 
 L.control.layers(theseBasemaps, operationalLayers, thisControlOptions).addTo(wondersMap)
+
+let thismarker = L.marker([29.978707, 31.134289]).addTo(wondersMap)
+thismarker.bindPopup('The Great Pyramid of Giza' + '<br>Constructed between 2584-2561 B.C.'+ '<br>Honorary World Wonder')
