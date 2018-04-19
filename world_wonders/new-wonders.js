@@ -20,13 +20,43 @@ let theseBasemaps = {
   'Equator Map': thisBasemap4
 }
 
+let pyramidmarker = L.marker([29.978707, 31.134289]).addTo(wondersMap)
+pyramidmarker.bindPopup('The Great Pyramid of Giza, Egypt' + '<br>Constructed 2561 B.C.'+ '<br>Honorary World Wonder')
+
+let tajmahalmarker = L.marker([27.173891, 78.042068]).addTo(wondersMap)
+tajmahalmarker.bindPopup('Taj Mahal, India' + '<br>Constructed 1648')
+
+let machupicchumarker = L.marker([-13.163068, -72.545128]).addTo(wondersMap)
+machupicchumarker.bindPopup('Machu Picchu, Peru' + '<br>Constructed 1450')
+
+let colosseummarker = L.marker([41.890251, 12.492373]).addTo(wondersMap)
+colosseummarker.bindPopup('Colosseum, Italy' + '<br>Constructed A.D. 80')
+
+let wallmarker = L.marker([40.431908, 116.570374]).addTo(wondersMap)
+wallmarker.bindPopup('Great Wall of China, China' + '<br>Constructed 7th Century B.C.')
+
+let petramarker = L.marker([30.32221, 35.47933]).addTo(wondersMap)
+petramarker.bindPopup('Petra, Jordan' + '<br>Constructed 100 B.C.')
+
+let christmarker = L.marker([-22.951871, -43.21118]).addTo(wondersMap)
+christmarker.bindPopup('Christ the Redeemer Statue, Brazil' + '<br>Constructed 1931')
+
+let chichenitzamarker = L.marker([20.683259, -88.570341]).addTo(wondersMap)
+chichenitzamarker.bindPopup('Chichen Itza, Mexico' + '<br>Constructed A.D. 600')
+
 let thisControlOptions = {
   collapsed: true
 }
 
-let operationalLayers = {}
+let operationalLayers = {
+  'Great Pyramid': pyramidmarker,
+  'Great Wall': wallmarker,
+  'Taj Mahal': tajmahalmarker,
+  'Machu Picchu': machupicchumarker,
+  'Colosseum': colosseummarker,
+  'Petra': petramarker,
+  'Christ Statue': christmarker,
+  'Chichen Itza': chichenitzamarker
+}
 
 L.control.layers(theseBasemaps, operationalLayers, thisControlOptions).addTo(wondersMap)
-
-let thismarker = L.marker([29.978707, 31.134289]).addTo(wondersMap)
-thismarker.bindPopup('The Great Pyramid of Giza' + '<br>Constructed between 2584-2561 B.C.'+ '<br>Honorary World Wonder')
