@@ -60,15 +60,23 @@ let operationalLayers = {
   'Chichen Itza': chichenitzamarker
 }
 
-let pyramidsshape = L.polygon([
+let pyramidsCoords = [
   [29.980529, 31.126762],
   [29.980529, 31.138864],
   [29.971272, 31.138864],
   [29.971272, 31.126762]
-]).addTo(wondersMap);
+]
+
+let pyramidsstyle = {
+  color: 'Indigo',
+  fillColor: 'Indigo',
+  fillOpacity: 0.3
+}
+
+let pyramidsshape = L.polygon(pyramidsCoords, pyramidsstyle).addTo(wondersMap)
 pyramidsshape.bindPopup('Great Pyramids of Egypt')
 
-let wallshape = L.polyline([
+let wallCoords = [
   [40.437733, 116.577925],
   [40.436785, 116.578569],
   [40.435315, 116.575435],
@@ -83,8 +91,21 @@ let wallshape = L.polyline([
   [40.452708, 116.541404],
   [40.456431, 116.528335],
   [40.45294, 116.518792]
-]).addTo(wondersMap)
+]
+
+let wallstyle = {
+  color: 'Indigo'
+}
+
+let wallshape = L.polyline(wallCoords, wallstyle).addTo(wondersMap)
 wallshape.bindPopup('Great Wall of China')
+
+let colosseumshape = L.circle([41.890251, 12.492373], {
+    color: 'deeppink',
+    fillColor: '#FF1493',
+    fillOpacity: 0.3,
+    radius: 450
+}).addTo(wondersMap);
 
 wondersMap.on('click', function (event) {
   console.log('You selected ' + event.latlng)
