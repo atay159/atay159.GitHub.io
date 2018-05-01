@@ -35,13 +35,13 @@ colosseummarker.bindPopup('Colosseum, Italy' + '<br>Constructed A.D. 80')
 let wallmarker = L.marker([40.433169, 116.563365]).addTo(wondersMap)
 wallmarker.bindPopup('Great Wall of China, China' + '<br>Constructed 7th Century B.C.')
 
-let petramarker = L.marker([30.32221, 35.47933]).addTo(wondersMap)
+let petramarker = L.marker([30.331954, 35.446095]).addTo(wondersMap)
 petramarker.bindPopup('Petra, Jordan' + '<br>Constructed 100 B.C.')
 
 let christmarker = L.marker([-22.951871, -43.21118]).addTo(wondersMap)
 christmarker.bindPopup('Christ the Redeemer Statue, Brazil' + '<br>Constructed 1931')
 
-let chichenitzamarker = L.marker([20.683259, -88.570341]).addTo(wondersMap)
+let chichenitzamarker = L.marker([20.683001, -88.568595]).addTo(wondersMap)
 chichenitzamarker.bindPopup('Chichen Itza, Mexico' + '<br>Constructed A.D. 600')
 
 
@@ -77,6 +77,10 @@ let pyramidsshape = L.polygon(pyramidsCoords, pyramidsstyle).addTo(wondersMap)
 pyramidsshape.bindPopup('Great Pyramids of Egypt')
 
 let wallCoords = [
+  [40.427289, 116.604163],
+  [40.439079, 116.592964],
+  [40.441561, 116.587468],
+  [40.43934, 116.580255],
   [40.437733, 116.577925],
   [40.436785, 116.578569],
   [40.435315, 116.575435],
@@ -90,7 +94,11 @@ let wallCoords = [
   [40.454864, 116.543121],
   [40.452708, 116.541404],
   [40.456431, 116.528335],
-  [40.45294, 116.518792]
+  [40.45294, 116.518792],
+  [40.453507, 116.515294],
+  [40.456762, 116.509119],
+  [40.453993, 116.500237],
+  [40.463745, 116.495685]
 ]
 
 let wallstyle = {
@@ -104,8 +112,79 @@ let colosseumshape = L.circle([41.890251, 12.492373], {
     color: 'deeppink',
     fillColor: '#FF1493',
     fillOpacity: 0.3,
-    radius: 450
+    radius: 250
 }).addTo(wondersMap);
+colosseumshape.bindPopup('Roman Colosseum')
+
+let petraCoords = [
+  [30.350522, 35.425586],
+  [30.309035, 35.425586],
+  [30.309035, 35.458217],
+  [30.350522, 35.458217]
+]
+
+let petrastyle = {
+  color: 'Indigo',
+  fillColor: 'Indigo',
+  fillOpacity: 0.3
+}
+
+let petrashape = L.polygon(petraCoords, petrastyle).addTo(wondersMap)
+petrashape.bindPopup('Petra')
+
+let chichenitzashape = L.circle([20.683001, -88.568595], {
+    color: 'deeppink',
+    fillColor: '#FF1493',
+    fillOpacity: 0.3,
+    radius: 250
+}).addTo(wondersMap);
+chichenitzashape.bindPopup('Chichen Itza')
+
+let tajmahalCoords = [
+  [27.175474, 78.040656],
+  [27.175474, 78.043704],
+  [27.170415, 78.043704],
+  [27.170415, 78.040656]
+]
+
+let tajmahalstyle = {
+  color: 'cyan',
+  fillColor: '#00FFFF',
+  fillOpacity: 0.3
+}
+let tajmahalshape = L.polygon(tajmahalCoords, tajmahalstyle).addTo(wondersMap)
+tajmahalshape.bindPopup('Taj Mahal')
+
+let machupicchuCoords = [
+  [-13.161894, -72.546448],
+  [-13.161643, -72.545718],
+  [-13.162167, -72.544929],
+  [-13.16245, -72.544478],
+  [-13.162585, -72.544017],
+  [-13.162951, -72.543748],
+  [-13.163714, -72.544092],
+  [-13.165138, -72.542972],
+  [-13.167192, -72.543298],
+  [-13.166231, -72.545971],
+  [-13.16527, -72.545455],
+  [-13.164208, -72.546142]
+]
+
+let machupicchustyle = {
+  color: 'cyan',
+  fillColor: '#00FFFF',
+  fillOpacity: 0.3
+}
+let machupicchushape = L.polygon(machupicchuCoords, machupicchustyle).addTo(wondersMap)
+machupicchushape.bindPopup('Machu Picchu')
+
+let christstatueshape = L.circle([-22.951871, -43.21118], {
+    color: 'lime',
+    fillColor: '#00FF00',
+    fillOpacity: 0.3,
+    radius: 150
+}).addTo(wondersMap);
+christstatueshape.bindPopup('Christ the Redeemer')
 
 wondersMap.on('click', function (event) {
   console.log('You selected ' + event.latlng)
