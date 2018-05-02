@@ -23,57 +23,57 @@ let theseBasemaps = {
 let pyramidsIcon = L.icon({
   iconUrl: 'pyramid-png.png',
   iconSize: [50, 50], // size of the icon
-  iconAnchor: [29.978707, 31.134289], // point of the icon which will correspond to marker's location
-  popupAnchor: [29.978707, 31.134289] // point from which the popup should open relative to the iconAnchor
+  iconAnchor: [29, 31], // point of the icon which will correspond to marker's location
+  popupAnchor: [29, 31] // point from which the popup should open relative to the iconAnchor
 })
 
 let petraIcon = L.icon({
   iconUrl: 'petra.png',
   iconSize: [50, 50], // size of the icon
-  iconAnchor: [30.331954, 35.446095], // point of the icon which will correspond to marker's location
-  popupAnchor: [30.331954, 35.446095] // point from which the popup should open relative to the iconAnchor
+  iconAnchor: [30, 35], // point of the icon which will correspond to marker's location
+  popupAnchor: [30, 35] // point from which the popup should open relative to the iconAnchor
 })
 
 let tajmahalIcon = L.icon({
   iconUrl: 'taj mahal.png',
   iconSize: [50, 50], // size of the icon
-  iconAnchor: [27.173891, 78.042068], // point of the icon which will correspond to marker's location
-  popupAnchor: [27.173891, 78.042068] // point from which the popup should open relative to the iconAnchor
+  iconAnchor: [27, 78], // point of the icon which will correspond to marker's location
+  popupAnchor: [27, 78] // point from which the popup should open relative to the iconAnchor
 })
 
 let machupicchuIcon = L.icon({
   iconUrl: 'machu picchu.png',
   iconSize: [50, 50], // size of the icon
-  iconAnchor: [-13.163068, -72.545128], // point of the icon which will correspond to marker's location
-  popupAnchor: [-13.163068, -72.545128] // point from which the popup should open relative to the iconAnchor
+  iconAnchor: [-13, -72], // point of the icon which will correspond to marker's location
+  popupAnchor: [-13, -72] // point from which the popup should open relative to the iconAnchor
 })
 
 let colosseumIcon = L.icon({
   iconUrl: 'colosseum.png',
   iconSize: [50, 50], // size of the icon
-  iconAnchor: [41.890251, 12.492373], // point of the icon which will correspond to marker's location
-  popupAnchor: [41.890251, 12.492373] // point from which the popup should open relative to the iconAnchor
+  iconAnchor: [41, 12], // point of the icon which will correspond to marker's location
+  popupAnchor: [41, 12] // point from which the popup should open relative to the iconAnchor
 })
 
 let wallIcon = L.icon({
   iconUrl: 'great wall.png',
   iconSize: [50, 50], // size of the icon
-  iconAnchor: [40.433169, 116.563365], // point of the i50, 50on which will correspond to marker's location
-  popupAnchor: [40.433169, 116.563365] // point from which the popup should open relative to the iconAnchor
+  iconAnchor: [40, 116], // point of the i50, 50on which will correspond to marker's location
+  popupAnchor: [40, 116] // point from which the popup should open relative to the iconAnchor
 })
 
 let christIcon = L.icon({
   iconUrl: 'christ.png',
   iconSize: [50, 50], // size of the icon
-  iconAnchor: [-22.951871, -43.21118], // point of the icon which will correspond to marker's location
-  popupAnchor: [-22.951871, -43.21118] // point from which the popup should open relative to the iconAnchor
+  iconAnchor: [-22, -43], // point of the icon which will correspond to marker's location
+  popupAnchor: [-22, -43] // point from which the popup should open relative to the iconAnchor
 })
 
 let chichenitzaIcon = L.icon({
   iconUrl: 'chichen-itza.png',
   iconSize: [50, 50], // size of the icon
-  iconAnchor: [20.683001, -88.568595], // point of the icon which will correspond to marker's location
-  popupAnchor: [20.683001, -88.568595] // point from which the popup should open relative to the iconAnchor
+  iconAnchor: [20, -88], // point of the icon which will correspond to marker's location
+  popupAnchor: [20, -88] // point from which the popup should open relative to the iconAnchor
 })
 
 let pyramidmarker = L.marker([29.978707, 31.134289], {icon: pyramidsIcon}).addTo(wondersMap)
