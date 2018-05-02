@@ -20,28 +20,84 @@ let theseBasemaps = {
   'Equator Map': thisBasemap4
 }
 
-let pyramidmarker = L.marker([29.978707, 31.134289]).addTo(wondersMap)
+let pyramidsIcon = L.icon({
+  iconUrl: 'pyramid-png.png',
+  iconSize: [40, 40], // size of the icon
+  iconAnchor: [29.978707, 31.134289], // point of the icon which will correspond to marker's location
+  popupAnchor: [29.978707, 31.134289] // point from which the popup should open relative to the iconAnchor
+})
+
+let petraIcon = L.icon({
+  iconUrl: 'petra.png',
+  iconSize: [50, 40], // size of the icon
+  iconAnchor: [30.331954, 35.446095], // point of the icon which will correspond to marker's location
+  popupAnchor: [30.331954, 35.446095] // point from which the popup should open relative to the iconAnchor
+})
+
+let tajmahalIcon = L.icon({
+  iconUrl: 'taj mahal.png',
+  iconSize: [50, 50], // size of the icon
+  iconAnchor: [27.173891, 78.042068], // point of the icon which will correspond to marker's location
+  popupAnchor: [27.173891, 78.042068] // point from which the popup should open relative to the iconAnchor
+})
+
+let machupicchuIcon = L.icon({
+  iconUrl: 'machu picchu.png',
+  iconSize: [50, 50], // size of the icon
+  iconAnchor: [-13.163068, -72.545128], // point of the icon which will correspond to marker's location
+  popupAnchor: [-13.163068, -72.545128] // point from which the popup should open relative to the iconAnchor
+})
+
+let colosseumIcon = L.icon({
+  iconUrl: 'colosseum.png',
+  iconSize: [50, 50], // size of the icon
+  iconAnchor: [41.890251, 12.492373], // point of the icon which will correspond to marker's location
+  popupAnchor: [41.890251, 12.492373] // point from which the popup should open relative to the iconAnchor
+})
+
+let wallIcon = L.icon({
+  iconUrl: 'great wall.png',
+  iconSize: [50, 50], // size of the icon
+  iconAnchor: [40.433169, 116.563365], // point of the icon which will correspond to marker's location
+  popupAnchor: [40.433169, 116.563365] // point from which the popup should open relative to the iconAnchor
+})
+
+let christIcon = L.icon({
+  iconUrl: 'christ.png',
+  iconSize: [50, 50], // size of the icon
+  iconAnchor: [-22.951871, -43.21118], // point of the icon which will correspond to marker's location
+  popupAnchor: [-22.951871, -43.21118] // point from which the popup should open relative to the iconAnchor
+})
+
+let chichenitzaIcon = L.icon({
+  iconUrl: 'chichen-itza.png',
+  iconSize: [80, 80], // size of the icon
+  iconAnchor: [20.683001, -88.568595], // point of the icon which will correspond to marker's location
+  popupAnchor: [20.683001, -88.568595] // point from which the popup should open relative to the iconAnchor
+})
+
+let pyramidmarker = L.marker([29.978707, 31.134289], {icon: pyramidsIcon}).addTo(wondersMap)
 pyramidmarker.bindPopup('The Great Pyramid of Giza, Egypt' + '<br>Constructed 2561 B.C.'+ '<br>Honorary World Wonder')
 
-let tajmahalmarker = L.marker([27.173891, 78.042068]).addTo(wondersMap)
+let tajmahalmarker = L.marker([27.173891, 78.042068], {icon: tajmahalIcon}).addTo(wondersMap)
 tajmahalmarker.bindPopup('Taj Mahal, India' + '<br>Constructed 1648')
 
-let machupicchumarker = L.marker([-13.163068, -72.545128]).addTo(wondersMap)
+let machupicchumarker = L.marker([-13.163068, -72.545128], {icon: machupicchuIcon}).addTo(wondersMap)
 machupicchumarker.bindPopup('Machu Picchu, Peru' + '<br>Constructed 1450')
 
-let colosseummarker = L.marker([41.890251, 12.492373]).addTo(wondersMap)
+let colosseummarker = L.marker([41.890251, 12.492373], {icon: colosseumIcon}).addTo(wondersMap)
 colosseummarker.bindPopup('Colosseum, Italy' + '<br>Constructed A.D. 80')
 
-let wallmarker = L.marker([40.433169, 116.563365]).addTo(wondersMap)
+let wallmarker = L.marker([40.433169, 116.563365], {icon: wallIcon}).addTo(wondersMap)
 wallmarker.bindPopup('Great Wall of China, China' + '<br>Constructed 7th Century B.C.')
 
-let petramarker = L.marker([30.331954, 35.446095]).addTo(wondersMap)
+let petramarker = L.marker([30.331954, 35.446095], {icon: petraIcon}).addTo(wondersMap)
 petramarker.bindPopup('Petra, Jordan' + '<br>Constructed 100 B.C.')
 
-let christmarker = L.marker([-22.951871, -43.21118]).addTo(wondersMap)
+let christmarker = L.marker([-22.951871, -43.21118], {icon: christIcon}).addTo(wondersMap)
 christmarker.bindPopup('Christ the Redeemer Statue, Brazil' + '<br>Constructed 1931')
 
-let chichenitzamarker = L.marker([20.683001, -88.568595]).addTo(wondersMap)
+let chichenitzamarker = L.marker([20.683001, -88.568595], {icon: chichenitzaIcon}).addTo(wondersMap)
 chichenitzamarker.bindPopup('Chichen Itza, Mexico' + '<br>Constructed A.D. 600')
 
 
