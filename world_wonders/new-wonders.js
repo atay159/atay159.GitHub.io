@@ -22,14 +22,14 @@ let theseBasemaps = {
 
 let pyramidsIcon = L.icon({
   iconUrl: 'pyramid-png.png',
-  iconSize: [40, 40], // size of the icon
+  iconSize: [50, 50], // size of the icon
   iconAnchor: [29.978707, 31.134289], // point of the icon which will correspond to marker's location
   popupAnchor: [29.978707, 31.134289] // point from which the popup should open relative to the iconAnchor
 })
 
 let petraIcon = L.icon({
   iconUrl: 'petra.png',
-  iconSize: [50, 40], // size of the icon
+  iconSize: [50, 50], // size of the icon
   iconAnchor: [30.331954, 35.446095], // point of the icon which will correspond to marker's location
   popupAnchor: [30.331954, 35.446095] // point from which the popup should open relative to the iconAnchor
 })
@@ -58,7 +58,7 @@ let colosseumIcon = L.icon({
 let wallIcon = L.icon({
   iconUrl: 'great wall.png',
   iconSize: [50, 50], // size of the icon
-  iconAnchor: [40.433169, 116.563365], // point of the icon which will correspond to marker's location
+  iconAnchor: [40.433169, 116.563365], // point of the i50, 50on which will correspond to marker's location
   popupAnchor: [40.433169, 116.563365] // point from which the popup should open relative to the iconAnchor
 })
 
@@ -71,7 +71,7 @@ let christIcon = L.icon({
 
 let chichenitzaIcon = L.icon({
   iconUrl: 'chichen-itza.png',
-  iconSize: [80, 80], // size of the icon
+  iconSize: [50, 50], // size of the icon
   iconAnchor: [20.683001, -88.568595], // point of the icon which will correspond to marker's location
   popupAnchor: [20.683001, -88.568595] // point from which the popup should open relative to the iconAnchor
 })
